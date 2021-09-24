@@ -1,0 +1,100 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://avatars.slack-edge.com/2021-06-24/2233642559168_0ece5626019f23253940_512.png",
+                            "size": "Medium",
+                            "height": "50px"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Hello World",
+                            "wrap": true,
+                            "size": "Large",
+                            "spacing": "Small"
+                        }
+                    ],
+                    "width": "stretch",
+                    "verticalContentAlignment": "Center"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Name:",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "id": "card_custom_name_field",
+            "spacing": "None"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Description:",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "This is a placeholder",
+            "isMultiline": true,
+            "spacing": "None",
+            "id": "card_custom_description_field"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Choice:",
+            "wrap": true
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "placeholder": "--select--",
+            "spacing": "None",
+            "id": "card_custom_choice_selected",
+            "choices": [
+                {
+                    "title": "Red",
+                    "value": "red"
+                },
+                {
+                    "title": "Blue",
+                    "value": "blue"
+                },
+                {
+                    "title": "Green",
+                    "value": "green"
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "id": "submit",
+                    "data": {
+                        "submit": "main"
+                    }
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
