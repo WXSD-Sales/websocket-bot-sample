@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center"> Websocket Bot Sample</h2>
+  <h2 align="center"> Websocket Sample Bot</h2>
 
   <p align="center">
     This demo can be used to spin up a quick chat bot in node.js that utilizes the <a href="https://developer.webex.com/docs/sdks/node">Webex JS SDK.</a><br />
